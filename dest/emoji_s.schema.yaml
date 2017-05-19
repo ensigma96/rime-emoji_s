@@ -33,7 +33,7 @@ engine:
     - uniquifier
 
 speller:
-  alphabet: "zyxwvutsrqponmlkjihgfedcba"
+  alphabet: "zyxwvutsrqponmlkjihgfedcba_"
   delimiter: " "
   # 自動上屏
   # auto_select: true
