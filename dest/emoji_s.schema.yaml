@@ -1,0 +1,56 @@
+# emoji_s.schema.yaml
+# encoding: utf-8
+
+schema:
+  schema_id: emoji_s
+  name: "Emoji_s"
+  version: "0.1"
+  description: "Yet another emoji / 繪文字 input schema for RIME."
+  author:
+    - Yunyang Liu <ensigma96@gmail.com>
+
+switches:
+  - name: ascii_mode
+    reset: 0
+
+engine:
+  processors:
+    - ascii_composer
+    - selector
+    - speller
+    - punctuator
+    - navigator
+    - express_editor
+  segmentors:
+    - ascii_segmentor
+    - abc_segmentor
+    - punct_segmentor
+    - fallback_segmentor
+  translators:
+    - punct_translator
+    - table_translator
+  filters:
+    - uniquifier
+
+speller:
+  alphabet: "zyxwvutsrqponmlkjihgfedcba"
+  delimiter: " "
+  # 自動上屏
+  # auto_select: true
+  algebra:
+    - "derive/^([a-z_]*?)_([a-z_]*?)_([a-z_]*?)/$1$2$3"
+    - "derive/^([a-z_]*?)_([a-z_]*?)$/$1$2"
+
+translator:
+  dictionary: emoji_s
+  spelling_hints: 1    # display spelling hints
+  enable_user_dict: false
+  enable_sentence: true
+  comment_format:
+    - xform/^~(.*)$/$1/
+
+punctuator:  # 只須定義空格一個符號
+  use_space: true
+  half_shape: &punct
+    ' ' : { commit: ' ' }
+  full_shape: *punct
