@@ -4,7 +4,7 @@
 schema:
   schema_id: emoji_s
   name: "Emoji_s"
-  version: "0.2"
+  version: "0.3"
   description: "Yet another emoji / 繪文字 input schema for RIME."
   author:
     - Yunyang Liu <ensigma96@gmail.com>

@@ -3,8 +3,8 @@
 
 ---
 name: emoji_s
-version: "0.2"
-sort: original
+version: "0.3"
+sort: by_weight
 use_preset_vocabulary: false
 
 import_tables:

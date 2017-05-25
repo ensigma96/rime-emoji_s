@@ -21,11 +21,16 @@ for entry in data['d:dictionary']['d:entry']:
           curr_emoji = index['@d:value']
         else:
           name = index['@d:value']
+
+          if (len(curr_emoji) <= 2):
+            word_freq = 10
+          else:
+            word_freq = 5
+
           if ' ' in name:
             name = name.replace(' ', '_')
             word_freq = 1
-          else:
-            word_freq = 10
+
           temp.append({'emoji': curr_emoji,  'name': name, 'word_freq': word_freq})
     curr_emoji = ''
 

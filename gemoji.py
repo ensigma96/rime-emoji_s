@@ -18,12 +18,17 @@ for stuff in data:
     emoji = stuff['emoji']
     aliases = stuff['aliases']
     tags = stuff['tags']
+
+    if (len(emoji) <= 2):
+      word_freq = 10
+    else:
+      word_freq = 5
+
     if (len(aliases) > 0):
       for alias in aliases:
         # use sep to replace spaces with tabs in output
-        word_freq = 10
+
         print(emoji, alias, word_freq, sep='\t', file=result)
     if (len(tags) > 0):
       for tag in tags:
-        word_freq = 10
         print(emoji, tag, word_freq, sep='\t', file=result)
