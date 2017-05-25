@@ -12,6 +12,7 @@ schema:
 switches:
   - name: ascii_mode
     reset: 0
+    states: [ 中文, 西文 ]
 
 engine:
   processors:
@@ -44,7 +45,7 @@ speller:
 
 translator:
   dictionary: emoji_s.main
-  spelling_hints: 1    # display spelling hints
+  spelling_hints: 1
   enable_user_dict: false
   enable_sentence: true
   comment_format:

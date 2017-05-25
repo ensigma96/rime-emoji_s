@@ -7,7 +7,7 @@ readonly SRC_SCHEMA="${SRC}/schema"
 readonly DEST="${DIR}/dest"
 readonly DEST_DICT="${DEST}/emoji_s.dict"
 
-cp src/dict/main.meta.yaml dest/emoji_s.main.dict.yaml 
+cp "${SRC_DICT}/main.meta.yaml" "${DEST}/emoji_s.main.dict.yaml"
 
 # make a directory for "real" dicts
 mkdir -p "${DEST_DICT}"
