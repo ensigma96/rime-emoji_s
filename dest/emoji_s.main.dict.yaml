@@ -1,0 +1,13 @@
+# emoji_s.main.dict.yaml
+# encoding: utf-8
+
+---
+name: emoji_s
+version: "0.2"
+sort: original
+use_preset_vocabulary: false
+
+import_tables:
+  - emoji_s.dict/emoji_s.gemoji
+  - emoji_s.dict/emoji_s.emojipedia
+...

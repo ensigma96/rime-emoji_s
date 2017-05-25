@@ -4,7 +4,7 @@
 schema:
   schema_id: emoji_s
   name: "Emoji_s"
-  version: "0.1"
+  version: "0.2"
   description: "Yet another emoji / 繪文字 input schema for RIME."
   author:
     - Yunyang Liu <ensigma96@gmail.com>
@@ -33,16 +33,17 @@ engine:
     - uniquifier
 
 speller:
-  alphabet: "zyxwvutsrqponmlkjihgfedcba_"
+  alphabet: "zyxwvutsrqponmlkjihgfedcba_-"
   delimiter: " "
   # 自動上屏
   # auto_select: true
   algebra:
-    - "derive/^([a-z_]*?)_([a-z_]*?)_([a-z_]*?)/$1$2$3"
-    - "derive/^([a-z_]*?)_([a-z_]*?)$/$1$2"
+    - "derive/^([a-zA-Z_]*?)_([a-zA-Z_]*?)_([a-zA-Z_]*?)/$1$2$3"
+    - "derive/^([a-zA-Z_]*?)_([a-zA-Z_]*?)$/$1$2"
+    - "xlit/ZYXWVUTSRQPONMLKJIHGFEDCBA/zyxwvutsrqponmlkjihgfedcba"
 
 translator:
-  dictionary: emoji_s
+  dictionary: emoji_s.main
   spelling_hints: 1    # display spelling hints
   enable_user_dict: false
   enable_sentence: true

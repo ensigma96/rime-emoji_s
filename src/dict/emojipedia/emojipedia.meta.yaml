@@ -1,9 +1,9 @@
-# emoji_s.dict.yaml
+# emoji_s.emojipedia.dict.yaml
 # encoding: utf-8
 
 ---
-name: emoji_s
-version: "0.1"
+name: emoji_s.emojipedia
+version: "0.2"
 sort: original
 use_preset_vocabulary: false
 ...

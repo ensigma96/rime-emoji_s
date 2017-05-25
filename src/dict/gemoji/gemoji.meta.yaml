@@ -1,0 +1,9 @@
+# emoji_s.gemoji.dict.yaml
+# encoding: utf-8
+
+---
+name: emoji_s.gemoji
+version: "0.2"
+sort: original
+use_preset_vocabulary: false
+...
