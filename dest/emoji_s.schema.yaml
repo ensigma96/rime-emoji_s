@@ -5,7 +5,7 @@ schema:
   schema_id: emoji_s
   name: "Emoji_s"
   version: "0.3.1"
-  description: "Yet another emoji / 繪文字 input schema for RIME."
+  description: "Yet another emoji / 絵文字 input schema for RIME."
   author:
     - Yunyang Liu <ensigma96@gmail.com>
 
@@ -45,7 +45,7 @@ speller:
 
 translator:
   dictionary: emoji_s.main
-  spelling_hints: 1
+  spelling_hints: 1  # display spelling hints
   enable_user_dict: false
   enable_sentence: true
   comment_format:
