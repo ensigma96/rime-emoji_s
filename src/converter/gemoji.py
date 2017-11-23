@@ -10,10 +10,9 @@ for stuff in data:
         emoji = stuff['emoji']
         aliases = stuff['aliases']
         tags = stuff['tags']
-
-    if (len(aliases) > 0):
-        for alias in aliases:
-            print(emoji, alias, sep='\t')
-    if (len(tags) > 0):
-        for tag in tags:
-            print(emoji, tag, sep='\t')
+        if (len(aliases) > 0):
+            for alias in aliases:
+                print(emoji, alias, sep='\t')
+        if (len(tags) > 0):
+            for tag in tags:
+                print(emoji, tag, sep='\t')
