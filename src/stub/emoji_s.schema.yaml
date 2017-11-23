@@ -41,7 +41,6 @@ speller:
   # auto_select: true
   algebra:
     - "derive/_/"
-    - "derive/ /"
     - "xlit/ZYXWVUTSRQPONMLKJIHGFEDCBA/zyxwvutsrqponmlkjihgfedcba"
 
 translator:
