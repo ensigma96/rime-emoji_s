@@ -10,4 +10,5 @@ use_preset_vocabulary: false
 import_tables:
   - 'emoji_s.dict/emoji_s.emojilib'
   - 'emoji_s.dict/emoji_s.gemoji'
+  - 'emoji_s.dict/emoji_s.emojipedia'
 ...
