@@ -16,15 +16,15 @@ for key in data:
     keywords = info['keywords']
     char = info['char']
     fitzpatrick_scale = info['fitzpatrick_scale']
-    char_collection = []
-    keyword_collection = []
+    char_collection = set()
+    keyword_collection = set()
     if char:
-        char_collection.append(char)
+        char_collection.add(char)
         if fitzpatrick_scale:
             for modifier in fitzpatrick_scale_modifiers:
-                char_collection.append(char + zwj + modifier)
-        keyword_collection.append(key)
-        keyword_collection.extend(keywords)
-        for item in char_collection:
-            for k in keyword_collection:
+                char_collection.add(char + zwj + modifier)
+        keyword_collection.add(key)
+        keyword_collection.update(keywords)
+        for item in sorted(char_collection):
+            for k in sorted(keyword_collection):
                 print(item, space2underscore(k), sep = '\t')
