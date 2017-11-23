@@ -1,9 +1,10 @@
-# emoji_s.gemoji.dict.yaml
 # encoding: utf-8
+# vim: set noet:
 
 ---
-name: emoji_s.gemoji
-version: "0.3.1"
+name: emoji_s.emojilib
+version: "0.4"
 sort: by_weight
 use_preset_vocabulary: false
 ...
+
