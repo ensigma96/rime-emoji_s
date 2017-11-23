@@ -1,8 +1,7 @@
-# emoji_s.main.dict.yaml
 # encoding: utf-8
 
 ---
-name: emoji_s.main
+name: emoji_s
 version: "0.4"
 sort: by_weight
 use_preset_vocabulary: false
