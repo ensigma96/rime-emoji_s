@@ -1,0 +1,3 @@
+[submodule "src/data/emojilib"]
+	path = src/data/emojilib
+	url = https://github.com/muan/emojilib.git
