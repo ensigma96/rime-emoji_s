@@ -2,8 +2,9 @@ import xmltodict
 import sys
 
 src_file_name = sys.argv[1]
-raw_data = open(src_file_name, 'r').read()
-data = xmltodict.parse(raw_data, dict_constructor=dict)
+
+with open(src_file_name, 'r') as f:
+    data = xmltodict.parse(f.read(), dict_constructor=dict)
 
 for entry in data['d:dictionary']['d:entry']:
     emoji = ''
@@ -14,4 +15,4 @@ for entry in data['d:dictionary']['d:entry']:
                 emoji = index['@d:title']
                 name = index['@d:value']
                 name = name.replace(' ', '_')
-                print(emoji, name, sep = '\t')
+                print(emoji, name, sep='\t')

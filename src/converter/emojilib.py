@@ -2,14 +2,12 @@ import json
 import sys
 
 src_file_name = sys.argv[1]
-raw_data = open(src_file_name, 'r').read()
-data = json.loads(raw_data)
 
 fitzpatrick_scale_modifiers = ['🏻', '🏼', '🏽', '🏾', '🏿']
 zwj = '\u200d'
 
-def space2underscore(str):
-    return str.replace(' ', '_')
+with open(src_file_name, 'r') as f:
+    data = json.load(f)
 
 for key in data:
     info = data[key]
@@ -27,4 +25,4 @@ for key in data:
         keyword_collection.update(keywords)
         for item in sorted(char_collection):
             for k in sorted(keyword_collection):
-                print(item, space2underscore(k), sep = '\t')
+                print(item, k.replace(' ', '_'), sep='\t')
