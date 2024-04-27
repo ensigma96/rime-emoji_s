@@ -1,3 +1,6 @@
 [submodule "src/data/emojilib"]
 	path = src/data/emojilib
 	url = https://github.com/muan/emojilib.git
+[submodule "data/gemoji"]
+	path = data/gemoji
+	url = https://github.com/github/gemoji
