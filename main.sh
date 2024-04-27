@@ -2,8 +2,8 @@
 
 readonly DIR=`pwd`
 readonly SRC="${DIR}/src"
-readonly STUB="${SRC}/stub"
-readonly DATA="${SRC}/data"
+readonly STUB="${DIR}/stub"
+readonly DATA="${DIR}/data"
 readonly EMOJILIB_DIR="${DATA}/emojilib"
 readonly GEMOJI_DIR="${DATA}/gemoji"
 readonly EMOJIPEDIA_DIR="${DATA}/Emojipedia"
