@@ -4,3 +4,6 @@
 [submodule "data/gemoji"]
 	path = data/gemoji
 	url = https://github.com/github/gemoji
+[submodule "data/Emojipedia"]
+	path = data/Emojipedia
+	url = https://github.com/gingerbeardman/Emojipedia
